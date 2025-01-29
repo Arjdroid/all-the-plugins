@@ -4,6 +4,7 @@
 #include <stdlib.h>
 #include <stdbool.h>
 #include <string.h>
+#include <sound.h>
 #include <furi_hal_resources.h>
 #include <furi_hal_gpio.h>
 #include <dolphin/dolphin.h>
@@ -27,6 +28,8 @@ typedef struct Point {
     // Also used for offset data, which is sometimes negative
     int8_t x, y;
 } Point;
+
+// TODO: Implement Korobeiniki ChipTune for increased Tetris immersion
 
 // Rotation logic taken from
 // https://www.youtube.com/watch?v=yIpk5TJ_uaI
